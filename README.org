@@ -1,0 +1,26 @@
+* ob-dall-e-shell
+
+Evaluate DALL-E shell text as Emacs org babel blocks
+
+* Setup
+
+Load =(require 'ob-dall-e-shell)= and invoke =(ob-dall-e-shell-setup)=.
+
+* Usage
+
+#+begin_src org
+  ,#+begin_src dall-e-shell
+    Pretty clouds
+  ,#+end_src
+
+  ,#+RESULTS:
+  [[file:/var/folders/m7/ky091cp56d5g68nyhl4y7frc0000gn/T/1680644778.png]]
+#+end_src
+
+** :version
+
+Use =:version= to set the model, for example: "dall-e-3".
+
+** :results
+
+For DALL-E 3, use =:results both= to also output the revised prompt.
