@@ -42,9 +42,9 @@
 ;;; Requirements:
 
 ;;; Code:
-(require 'ob)
 (require 'dall-e-shell)
 (require 'map)
+(require 'org)
 
 (defvar org-babel-default-header-args:dall-e-shell '((:results . "file")
                                                      (:version . nil)))
@@ -66,7 +66,7 @@ This function is called by `org-babel-execute-src-block'"
 
   ;; Automatically refresh inline images.
   (add-hook 'org-babel-after-execute-hook
-            (defun ob-dall-e--refresh-inline-images ()
+            (defun ob-dall-e-shell--refresh-inline-images ()
               (when org-inline-image-overlays
                 (org-redisplay-inline-images)))))
 
