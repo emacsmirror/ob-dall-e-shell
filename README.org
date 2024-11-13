@@ -2,9 +2,23 @@
 
 Evaluate DALL-E shell text as Emacs org babel blocks
 
+** Support this effort
+
+If you're finding =ob-dall-e-shell= useful, help make the project sustainable and consider ✨[[https://github.com/sponsors/xenodium][sponsoring]]✨.
+
+=dall-e-shell= is in development. Please report issues or send [[https://github.com/xenodium/ob-dall-e-shell/pulls][pull requests]] for improvements.
+
+** Like this package? Tell me about it 💙
+
+Finding it useful? Like the package? I'd love to hear from you. Get in touch ([[https://indieweb.social/@xenodium][Mastodon]] / [[https://twitter.com/xenodium][Twitter]] / [[https://www.reddit.com/user/xenodium][Reddit]] / [[mailto:me__AT__xenodium.com][Email]]).
+
 * Setup
 
 Load =(require 'ob-dall-e-shell)= and invoke =(ob-dall-e-shell-setup)=.
+
+* Set OpenAI key
+
+See [[https://github.com/xenodium/dall-e-shell?tab=readme-ov-file#set-openai-key][dall-e-shell]].
 
 * Usage
 
